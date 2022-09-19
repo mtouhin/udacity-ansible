@@ -99,6 +99,7 @@ jobs:
       - run:
           name: Configure server
           command: |
+            cat inventory.txt ;
             ansible-playbook -i inventory.txt main4.yml
 
   # Exercise: Smoke Testing
